@@ -121,17 +121,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 45, ../sass/screen.scss */
 p1, p2 {
   color: white;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* line 50, ../sass/screen.scss */
 p1 {
 font-family: 'Direct Gothic';
-  font-weight: 700;
+font-weight: 700;
 }
 
 /* line 54, ../sass/screen.scss */
 p2 {
+font-family: 'Direct Gothic';
   font-weight: 400;
 }
 
