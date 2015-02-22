@@ -119,15 +119,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 45, ../sass/screen.scss */
 p1, p2 {
+  margin-bottom: 10px;
   color: white;
   font-size: 28px;
 }
 
 img {
-  margin-left: -20px;
   margin-top: -20px;
-    margin-right: 20px;
-
+  margin-right: 20px;
 }
 /* line 50, ../sass/screen.scss */
 p1 {
