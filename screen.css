@@ -68,7 +68,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 9, ../sass/screen.scss */
-.bubble {
+#bubble {
   position: relative;
   width: 100%;
   height: 120px;
@@ -80,8 +80,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   opacity: 0.4;
 }
 
-/* line 22, ../sass/screen.scss */
-.bubble:after {
+@keyframes signup-response {
+  /* line 22, ../sass/screen.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 23, ../sass/screen.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes signup-response {
+  /* line 27, ../sass/screen.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 28, ../sass/screen.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+/* line 32, ../sass/screen.scss */
+#bubble:after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -94,23 +118,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 30px;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 p1, p2 {
   color: white;
   font-size: 24px;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 p1 {
   font-weight: 700;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 p2 {
   font-weight: 400;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .textwrapper {
   padding: 3em;
+}
+
+/* line 62, ../sass/screen.scss */
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  /* line 74, ../sass/screen.scss */
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  /* line 81, ../sass/screen.scss */
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
 }
