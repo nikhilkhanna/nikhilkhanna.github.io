@@ -73,11 +73,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
   height: 120px;
   padding: 0px;
-  background: #3e3b3e;
+  background: rgba(115,115,115,0.5);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  opacity: 0.4;
 }
 
 @keyframes signup-response {
