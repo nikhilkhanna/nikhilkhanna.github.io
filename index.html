@@ -1,45 +1,29 @@
-<html>
-    <head>
-	<style>
-	    h1 {
-	    	font-size: 400%;
-	    	font-color: white;
-	    	background: #d4d4d4;
-	    }
-	</style>
-    </head>
-    <body>	
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-        <h1 id = "text" align = "center">THIS IS SOME TEST TEXT</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Messenger</title>
+	<link href="screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	</head>
+<body>
+<div class = 'bubble'>
+<div class = 'textwrapper'>
+	<p1 id = "name">THIS IS SOME TEST TEXT</p1>
+	<p2 id = "chat">THIS IS SOME TEST TEXT</p2>
+</div>
+</div>
 	<script>
 	    function getParameterByName(name) {
-		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-		results = regex.exec(location.search);
-		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+			results = regex.exec(location.search);
+			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 	    } 
+	    
 	    var textToDisplay = getParameterByName('chat');
-	    document.getElementById("text").innerHTML = textToDisplay;
+	    var nameToDisplay = getParameterByName('name');
+	    document.getElementById("chat").innerHTML = textToDisplay;
+	   	document.getElementById("name").innerHTML = nameToDisplay;
 	</script>
-    </body>			
+</body>
 </html>
